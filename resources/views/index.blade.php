@@ -38,7 +38,7 @@
             <form action="todo/update?id={{$item->id}}" method="post" class="todo_update">
               @csrf
               <td>
-                <input type="text" class="input-update" value="{{$item->content}}">
+                <input type="text" class="input-update" value="{{$item->content}}" name="content">
               </td>
               <td>
                 <input type="submit" class="button-update" value="更新">
@@ -47,6 +47,7 @@
               <form action="todo/delete?id={{$item->id}}" method="post" class="todo_delete">
                 @csrf
                 <input type="submit" class="button-delete" value="削除">
+              </form>
             </td>
           </tr>
           @endforeach

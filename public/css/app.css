@@ -1,0 +1,77 @@
+.container {
+  background-color: rgb(30, 0, 96);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.card {
+  width: 50vw;
+  background-color: white;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.todo_create {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 30px;
+}
+.input-add {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 14px;
+}
+.button-add {
+  border-radius: 5px;
+  border: 2px solid rgb(255, 155, 233);
+  background-color: white;
+  padding: 8px 16px;
+  color: rgb(255, 155, 233);
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+tr {
+  height: 50px;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+.input-update {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 14px;
+}
+.button-update {
+  border-radius: 5px;
+  border: 2px solid orange;
+  background-color: white;
+  padding: 8px 16px;
+  color: orange;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-delete {
+  border-radius: 5px;
+  border: 2px solid rgb(0, 251, 255);
+  background-color: white;
+  padding: 8px 16px;
+  color: rgb(0, 251, 255);
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
