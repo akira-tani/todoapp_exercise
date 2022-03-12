@@ -5,11 +5,11 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
-use Illuminate\Support\Facades\DB;
 use App\Models\Task;
 
 class HelloTest extends TestCase
 {
+    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
@@ -20,7 +20,7 @@ class HelloTest extends TestCase
         $response = $this->get('/');
         $response->assertStatus(200);
 
-        Task::factory()->create([
+        Task::all()->create([
             'name'=>'aaa',
             'content'=>'bbb',
         ]);
